@@ -1,0 +1,19 @@
+.navbar li a {
+    font-family: 'Tourney', cursive;
+    
+}
+
+
+h1 {
+    font-size: 49px;
+    font-family: 'Benne', serif;
+}
+
+h2 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 35px;
+}
+
+.carousel-item {
+    overflow: hidden;
+}
