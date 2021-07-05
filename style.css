@@ -18,6 +18,11 @@ h2 {
     overflow: hidden;
 }
 
+.card-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
 a:link {
     text-decoration: none;
 }
