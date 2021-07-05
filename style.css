@@ -5,16 +5,19 @@
 
 
 h1 {
-    font-size: 49px;
+    font-size: 55px;
     font-family: 'Benne', serif;
 }
 
 h2 {
     font-family: 'Yellowtail', cursive;
-    font-size: 35px;
+    font-size: 42px;
 }
 
 .carousel-item {
     overflow: hidden;
 }
 
+a:link {
+    text-decoration: none;
+}
