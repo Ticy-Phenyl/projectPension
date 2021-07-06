@@ -161,7 +161,7 @@
     </div>
 
 
-    <footer class="bg-primary mx-2 rounded">
+    <footer class="bg-primary mx-2 rounded my-4">
         <div class="text-center text-white py-1">© 2021 Copyright : ひとみとモイラ</div>
 
 
@@ -190,21 +190,23 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Benne&family=Yellowtail&display=swap" rel="stylesheet">
 
-    <<link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
 
 
 
 
-        <script>
-            $(document).ready(function () {
-                $("#searchInput").on("keyup", function () {
-                    var value = $(this).val().toLowerCase();
-                    $("#letMeKnow .col").filter(function () {
-                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                    });
+    <script>
+        $(document).ready(function () {
+            $("#searchInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#letMeKnow .col").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
