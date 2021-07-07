@@ -28,3 +28,35 @@ a:link {
 }
 
 
+@keyframes play_cards {
+    from {
+        margin-top: 100%;
+        width: 100%;
+    }
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes play_cards {
+    0% {
+        margin-top: 100%;
+        width: 100%;
+      }
+      100% {
+        margin-bottom: 0%;
+        width: 100%;
+      }
+}
+
+body {
+    animation-name: play_cards;
+    animation-delay: 2ms;
+    animation-duration: 2.5s;
+    animation-iteration-count: initial;
+    -webkit-animation-name: play_cards;
+    -webkit-animation-iteration-count: initial ;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-delay: 2ms;
+}
