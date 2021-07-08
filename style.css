@@ -28,6 +28,14 @@ a:link {
 }
 
 
+
+
+
+
+
+
+
+/*           Keyframe pr animation bottom to top:
 @keyframes play_cards {
     from {
         margin-top: 100%;
@@ -60,3 +68,4 @@ body {
     -webkit-animation-duration: 2.5s;
     -webkit-animation-delay: 2ms;
 }
+*/
