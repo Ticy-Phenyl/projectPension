@@ -12,51 +12,49 @@
     <title>Chez Miss L</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
-<div class="bg-success rounded my-2 mx-1">
-
-    <nav class=" navbar navbar-expand-lg navbar-dark justify-content-between">
-
-        <a class="navbar-brand" href="#">
-            <h1 class="text-white mb-0">Chez Miss L</h1>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <h2 class="text-light mt-n2">Education Canine & Pension</h2>
-
-        <div id="navbarContent" class="collapse navbar-collapse">
-
-            <ul class="navbar-nav list-inline mt-3">
-                <li class="nav-item active list-inline-item">
-                    <a class="nav-link" href="education.html">Cours d'éducation canine</a>
-                </li>
-                <li class="nav-item active list-inline-item">
-                    <a class="nav-link" href="pension.html">Pension</a>
-                </li>
-                <li class="nav-item active list-inline-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-
-        </div>
-
-    </nav>
-
-</div>
-
 
 <body>
 
-    <!--  Div search à combiner avec script jquery 
-    <div class="col my-3 rounded">
+    <div class="bg-success rounded my-2 mx-1">
+
+        <nav class=" navbar navbar-expand-lg navbar-dark justify-content-between">
+
+            <a class="navbar-brand" href="#">
+                <h1 class="text-white mb-0">Chez Miss L</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <h2 class="text-light mt-n2">Education Canine & Pension</h2>
+
+            <div id="navbarContent" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav list-inline mt-3">
+                    <li class="nav-item active list-inline-item">
+                        <a class="nav-link" href="education.html">Cours d'éducation canine</a>
+                    </li>
+                    <li class="nav-item active list-inline-item">
+                        <a class="nav-link" href="pension.html">Pension</a>
+                    </li>
+                    <li class="nav-item active list-inline-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="col mx-auto my-3 rounded">
         <input class="form-control shadow" id="searchInput" type="text" placeholder="Recherche...">
     </div>
--->
+
+
 
     <div id="carouselControls" class="carousel slide carousel-fade mx-n1" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -95,11 +93,11 @@
 
 
 
-
-
     <div class="row mx-auto mt-4" id="letMeKnow">
 
         <!--d-flex pr card de la même taille -->
+
+
 
         <div class="card mb-4 mx-2 border-secondary shadow">
             <a href="education.html">
@@ -156,7 +154,7 @@
                                 nuit). A
                                 10'
                                 de Montauban. <br class="mb-1">
-                                <bold>GPS:</bold> 44.0990675,1.4657462
+                                <span>GPS:</span> 44.0990675,1.4657462
                             </p>
                         </div>
                     </div>
@@ -207,7 +205,7 @@
         $(document).ready(function () {
             $("#searchInput").on("keyup", function () {
                 var value = $(this).val().toLowerCase();
-                $("#letMeKnow .col").filter(function () {
+                $("#letMeKnow .card").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
