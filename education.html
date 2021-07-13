@@ -12,7 +12,6 @@
     <title>Chez Miss L</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -56,7 +55,6 @@
             <h2 class="text-white">Cours d'éducation Canine</h2>
         </div>
     </div>
-
 
     <div class="mx-2 mb-3 rounded">
         <label id="searchLabel" for="searchInput"><span class="sr-only">Recherche</span></label>
@@ -170,6 +168,9 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -188,14 +189,9 @@
 
         // Script shadow onclick:
         function shadowMe() {
-            console.log('hellooooooooooooooooo');
             search = document.getElementById("searchInput").classList.toggle("shadow");
-            search.preventDefault();
         }
         window.addEventListener('focusout', shadowMe, false);
-
-
-
 
 
         //  Script pr fctn recherche:
@@ -207,16 +203,6 @@
                 });
             });
         });
-
-
-
-
-
-
-
-
-
-
 
     </script>
 

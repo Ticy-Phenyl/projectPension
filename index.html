@@ -18,7 +18,7 @@
 
     <div class="bg-success rounded mt-2 mx-1">
 
-        <nav class=" navbar navbar-expand-lg navbar-dark justify-content-between">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
 
             <a class="navbar-brand" href="#">
                 <h1 class="text-white mb-0">Chez Miss L</h1>
@@ -32,6 +32,7 @@
             <h2 class="text-white mt-n2">Education Canine & Pension</h2>
 
             <div id="navbarContent" class="collapse navbar-collapse">
+
                 <ul class="navbar-nav list-inline mt-3">
                     <li class="nav-item active list-inline-item text-dark">
                         <a class="nav-link" href="education.html">Cours d'éducation canine</a>
@@ -51,8 +52,8 @@
 
     <div class="mx-2 mb-3 rounded">
         <label id="searchLabel" for="searchInput"><span class="sr-only">Recherche</span></label>
-        <input class="form-control shadow" id="searchInput" aria-labelledby="searchLabel" name="searchInput" type="text"
-            placeholder="Recherche...">
+        <input class="form-control" id="searchInput" aria-labelledby="searchLabel" name="searchInput" type="text"
+            placeholder="Recherche..." onclick="shadowMe()">
     </div>
 
 
@@ -193,6 +194,15 @@
 
 
     <script>
+
+        // Script shadow onclick:
+        function shadowMe() {
+            search = document.getElementById("searchInput").classList.toggle("shadow");
+        }
+        window.addEventListener('focusout', shadowMe, false);
+
+
+
         $(document).ready(function () {
             $("#searchInput").on("keyup", function () {
                 var value = $(this).val().toLowerCase();
