@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="bg-success rounded my-2 mx-1">
+    <div class="bg-success rounded mt-2 mx-1">
 
         <nav class=" navbar navbar-expand-lg navbar-dark justify-content-between">
 
@@ -26,14 +26,14 @@
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Toggle Menu</span>
             </button>
 
-            <h2 class="text-light mt-n2">Education Canine & Pension</h2>
+            <h2 class="text-white mt-n2">Education Canine & Pension</h2>
 
             <div id="navbarContent" class="collapse navbar-collapse">
-
                 <ul class="navbar-nav list-inline mt-3">
-                    <li class="nav-item active list-inline-item">
+                    <li class="nav-item active list-inline-item text-dark">
                         <a class="nav-link" href="education.html">Cours d'éducation canine</a>
                     </li>
                     <li class="nav-item active list-inline-item">
@@ -43,17 +43,17 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-
             </div>
 
         </nav>
 
     </div>
 
-    <div class="col mx-auto my-3 rounded">
-        <input class="form-control shadow" id="searchInput" type="text" placeholder="Recherche...">
+    <div class="mx-2 mb-3 rounded">
+        <label id="searchLabel" for="searchInput"><span class="sr-only">Recherche</span></label>
+        <input class="form-control shadow" id="searchInput" aria-labelledby="searchLabel" name="searchInput" type="text"
+            placeholder="Recherche...">
     </div>
-
 
 
     <div id="carouselControls" class="carousel slide carousel-fade mx-n1" data-ride="carousel">
@@ -91,13 +91,8 @@
     </div>
 
 
-
-
     <div class="row mx-auto mt-4" id="letMeKnow">
-
         <!--d-flex pr card de la même taille -->
-
-
 
         <div class="card mb-4 mx-2 border-secondary shadow">
             <a href="education.html">
@@ -106,8 +101,8 @@
                         <img class="card-img-top" src="MissL-card.jpg" alt="photo_card_1">
                     </div>
                     <div class="col ml-1 d-flex">
-                        <div class="card-body bg-warning text-dark">
-                            <h3 class="card-title">Éducation</h3>
+                        <div class="card-body alpha text-white">
+                            <h3 class="card-title text-white">Éducation</h3>
                             <p class="card-text mt-4">Tous les chiens sont acceptés (sauf husky et malinois). Nous
                                 privilégions
                                 le renforcement positif, qui favorise la mise en valeur de bons comportements par la
@@ -127,9 +122,10 @@
                         <img class="card-img-top" src="Terrain-card.jpg" alt="photo_card_2">
                     </div>
                     <div class="col ml-1 d-flex">
-                        <div class="card-body bg-info text-white">
-                            <h3 class="card-title">Pension</h3>
-                            <p class="card-text mt-4">La pension canine chez Miss L accueille toute l'année vos fidèles
+                        <div class="card-body beta text-white">
+                            <h3 class="card-title ">Pension</h3>
+                            <p class="card-text mt-4">La pension canine chez Miss L accueille toute l'année
+                                vos fidèles
                                 compagnons. Nous disposons de 11 box d’une superficie variant entre 8 et 10m² (6 box de
                                 10m²
                                 et 5 box de 8m²).
@@ -148,12 +144,10 @@
                         <img class="card-img-top" src="Terrain-card_2.jpg" alt="photo_card_3">
                     </div>
                     <div class="col ml-1 d-flex">
-                        <div class="card-body bg-secondary text-white">
+                        <div class="card-body bg-danger text-white">
                             <h3 class="card-title">Contact</h3>
                             <p class="card-text mt-4">Nous sommes ouverts 7j/7, 12h/j (remise de 5% si vous arrivez de
-                                nuit). A
-                                10'
-                                de Montauban. <br class="mb-1">
+                                nuit). À 10 minutes de Montauban. <br class="mb-1">
                                 <span>GPS:</span> 44.0990675,1.4657462
                             </p>
                         </div>
@@ -165,12 +159,9 @@
     </div>
 
 
-    <footer class="bg-primary mx-2 rounded my-4">
-        <div class="text-center text-light py-1">© 2021 Copyright : ひとみとモイラ</div>
-
-
-
-
+    <footer class="bg-success mx-2 rounded my-4">
+        <div class="text-center text-white py-1">
+            <h5 class="mb-0 mt-1">© 2021 Copyright - ひとみとモイラ</h5 </div>
     </footer>
 
 
